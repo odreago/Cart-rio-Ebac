@@ -132,7 +132,8 @@ int main ()
 	    printf("Escolha a opção desejada:\n\n");
 	    printf("\t1-Inclusão de Usuário\n");
      	printf("\t2-Consulta de Usuário\n");
-    	printf("\t3-Excluir Usuário\n\n");
+    	printf("\t3-Excluir Usuário\n");
+    	printf("\t4-Para sair\n\n");
     	printf("digite a opção:  "); // fim do menu
 	
 	    scanf ("%d",  &opcao);  // armazenamento das informações do usuário
@@ -155,6 +156,11 @@ int main ()
 	        case 3:
 	   	    deletar();//chamada de funções/ função deletar
 	        break;
+	        
+	        case 4:
+	        return 0;
+	        break;
+	        
 	        
 	        default:
 	     	printf("essa opção não está disponível\n"); // fim das seleções
